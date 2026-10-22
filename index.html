@@ -8,8 +8,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="theme-color" content="#080306">
-
 <title>ULTRON AI</title>
 
 <style>
@@ -18,22 +16,32 @@
 
 body {
 
-  margin: 0;
+  margin: 0; min-height: 100vh;
 
-  min-height: 100vh;
+  background: #080306; color: #ff5368;
 
-  background: #080306;
+  font-family: Arial, sans-serif;
 
-  color: #ff5368;
+  display: grid; place-items: center;
 
-  font-family: -apple-system, Arial, sans-serif;
+  padding: 20px;
 
-  display: flex;
+}
 
-  align-items: center;
+main { text-align: center; width: 100%; max-width: 430px; }
 
-  justify-content: center;
+h1 { letter-spacing: 10px; text-shadow: 0 0 20px red; }
 
-  padding: 22px;
+.sub { letter-spacing: 3px; font-size: 11px; color: #b52b43; }
 
-  overflow-x: hidden;
+.orb {
+
+  width: 210px; height: 210px; border-radius: 50%;
+
+  margin: 35px auto; display: grid; place-items: center;
+
+  border: 2px solid #ff243e;
+
+  box-shadow: 0 0 35px #ff1838, inset 0 0 30px #a00020;
+
+  background: radial-gradient(circle, #68101e, #080306 70%);
